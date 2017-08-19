@@ -19,8 +19,7 @@ public class WelcomeApp2 {
         Thread welcomeThread = new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.printf("2.Welcome! I'm %s.%n", Thread.currentThread()
-                        .getName());
+                System.out.printf("2.Welcome! I'm %s.%n", Thread.currentThread().getName());
             }
         });
 
@@ -31,3 +30,8 @@ public class WelcomeApp2 {
         System.out.printf("1.Welcome! I'm %s.%n", Thread.currentThread().getName());
     }
 }
+/*
+2.Welcome! I'm main.
+2.Welcome! I'm Thread-0.
+1.Welcome! I'm main.
+ */

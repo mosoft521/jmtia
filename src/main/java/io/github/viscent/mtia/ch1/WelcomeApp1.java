@@ -22,9 +22,7 @@ public class WelcomeApp1 {
         welcomeThread.start();
         // 输出“当前线程”的线程名称
         System.out.printf("1.Welcome! I'm %s.%n", Thread.currentThread().getName());
-
     }
-
 }
 
 class WelcomeTask implements Runnable {
@@ -34,5 +32,8 @@ class WelcomeTask implements Runnable {
         // 输出“当前线程”的线程名称
         System.out.printf("2.Welcome! I'm %s.%n", Thread.currentThread().getName());
     }
-
 }
+/*
+1.Welcome! I'm main.
+2.Welcome! I'm Thread-0.
+ */

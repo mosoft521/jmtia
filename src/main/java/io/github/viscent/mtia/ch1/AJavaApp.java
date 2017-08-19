@@ -26,7 +26,11 @@ public class AJavaApp {
                 e.printStackTrace();
             }
         }
-
     }
-
 }
+/*
+Sat Aug 19 18:45:41 CST 2017
+Sat Aug 19 18:45:42 CST 2017
+Sat Aug 19 18:45:43 CST 2017
+...
+ */

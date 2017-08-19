@@ -39,3 +39,13 @@ public class SimpleTimer {
         return count--;
     }
 }
+/*
+Remaining 59 second(s)
+Remaining 58 second(s)
+Remaining 57 second(s)
+...
+Remaining 2 second(s)
+Remaining 1 second(s)
+Remaining 0 second(s)
+Done.
+ */

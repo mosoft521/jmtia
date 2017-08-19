@@ -54,12 +54,9 @@ public class FileDownloaderApp {
             String fileBaseName = fileURL.substring(fileURL.lastIndexOf('/') + 1);
             try {
                 URL url = new URL(fileURL);
-                String localFileName = System.getProperty("java.io.tmpdir")
-                        + "/viscent-"
-                        + fileBaseName;
+                String localFileName = System.getProperty("java.io.tmpdir") + "/viscent-" + fileBaseName;
                 Debug.info("Saving to: " + localFileName);
-                downloadFile(url, new FileOutputStream(
-                        localFileName), 1024);
+                downloadFile(url, new FileOutputStream(localFileName), 1024);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -67,11 +64,9 @@ public class FileDownloaderApp {
         }
 
         // 从指定的URL下载文件，并将其保存到指定的输出流中
-        private void downloadFile(URL url, OutputStream outputStream, int bufSize)
-                throws MalformedURLException, IOException {
+        private void downloadFile(URL url, OutputStream outputStream, int bufSize) throws MalformedURLException, IOException {
             // 建立HTTP连接
-            final HttpURLConnection httpConn = (HttpURLConnection) url
-                    .openConnection();
+            final HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
             httpConn.setRequestMethod("GET");
             ReadableByteChannel inChannel = null;
             WritableByteChannel outChannel = null;
@@ -87,10 +82,8 @@ public class FileDownloaderApp {
                     Debug.info("Nothing to be downloaded " + fileURL);
                     return;
                 }
-                inChannel = Channels
-                        .newChannel(new BufferedInputStream(httpConn.getInputStream()));
-                outChannel = Channels
-                        .newChannel(new BufferedOutputStream(outputStream));
+                inChannel = Channels.newChannel(new BufferedInputStream(httpConn.getInputStream()));
+                outChannel = Channels.newChannel(new BufferedOutputStream(outputStream));
                 ByteBuffer buf = ByteBuffer.allocate(bufSize);
                 while (-1 != inChannel.read(buf)) {
                     buf.flip();

@@ -21,8 +21,7 @@ public class JavaThreadAnywhere {
         // 获取当前线程的线程名称
         String currentThreadName = currentThread.getName();
 
-        System.out.printf("The main method was executed by thread:%s",
-                currentThreadName);
+        System.out.printf("The main method was executed by thread:%s", currentThreadName);
         Helper helper = new Helper("Java Thread AnyWhere");
         helper.run();
     }
@@ -52,3 +51,6 @@ public class JavaThreadAnywhere {
         }
     }
 }
+/*
+The main method was executed by thread:mainThe doSomething method was executed by thread:mainDo something with Java Thread AnyWhere
+ */
