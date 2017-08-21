@@ -52,3 +52,14 @@ public class ImplicitControlThreadsCount2 {
         System.out.println("end");
     }
 }
+/*
+>>>01<<<1>>>0
+>>>02<<<0>>>0
+>>>03<<<1>>>0
+...
+>>>94<<<0>>>1
+end
+>>>98<<<0>>>1
+>>>99<<<0>>>0
+>>>97<<<2>>>0
+ */
