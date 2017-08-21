@@ -86,3 +86,9 @@ public class XMLDocumentParserUsage {
     }
 
 }
+/*
+[2017-08-21 20:20:15.479][INFO][main]:Lorem ipsum feed for an interval of 1 minutes
+[2017-08-21 20:20:15.540][INFO][pool-1-thread-1]:Lorem ipsum feed for an interval of 1 minutes
+[2017-08-21 20:20:16.057][INFO][main]:Lorem ipsum feed for an interval of 1 minutes
+[2017-08-21 20:20:16.066][INFO][main]:The ExecutorService will be shutdown in 70 seconds.
+ */
